@@ -11,12 +11,12 @@ h1{
     display:flex; 
     font-size: 1.5em;
 }
-ul li {
+.endnavbar li {
     list-style: none;
     color: gray;
 }
-ul li:hover {
-    color: white; /* Couleur du texte au survol */
+.endnavbar li:hover {
+    color: white; 
 }
 
 .navbar{
@@ -25,9 +25,13 @@ ul li:hover {
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    color:#ccc;
+    margin:0px;
+}
+
+.header{
     background:linear-gradient(#13181d,#20212e,#341b47);
     height: 100vh;
-    color:#ccc
 }
 
 .navbar button {
@@ -64,22 +68,22 @@ body{
     color: #d33bfd;
 }
 .headerbody{
-    margin-top:5%;
-    margin-left: 5%;
     display: flex;
 }
 
 .lebody{
-    margin-top:5%;
-    margin-left: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     display: flex;
     background-color: #13181d;
 }
 
 .leftpart{
+    margin-top:5%;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 20px;
 }
 .rightpart{
     display: flex;
@@ -101,6 +105,8 @@ body{
     color:white;
     font-size:60px;
 }
+
+
 
 .textbody{
     font-size:16px;
@@ -148,4 +154,41 @@ body{
 .grosseimage2 {
     width: 400px;
     height: 400px;
+}
+
+
+
+
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.titrefin{
+    color:#d33bfd;
+    font-size: 20px;
+    font-style: bold;
+}
+
+
+
+.footer {
+    background-color: black;
+    display: flex;
+    padding: 4%;
+    justify-content: space-around; 
+    align-items: start;
+    font-size: 15px;
+    
+}
+
+.contact {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
 }
