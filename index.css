@@ -158,7 +158,26 @@ body{
 }
 
 
+.burger {
+    margin-right: 5px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
 
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.endnavbar {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
 
 
 .footer ul {
@@ -185,6 +204,8 @@ body{
     
 }
 
+
+
 .contact {
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -196,6 +217,30 @@ body{
 
 /* Responsive pour Tablettes (max 1024px) */
 @media screen and (max-width: 1024px) {
+
+
+    .burger {
+        justify-content: end;
+        display: flex;
+    }
+
+    .endnavbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: #20212e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease;
+    }
+
+    .endnavbar.active {
+        left: 0;
+
+    }
     .allimages {
         display: flex;
         justify-content: center;
@@ -206,7 +251,7 @@ body{
     }
 
     .navbar {
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
     }
@@ -254,7 +299,12 @@ body{
 
 
 @media screen and (max-width: 768px) {
+
     
+    .burger {
+        justify-content: end;
+        display: flex;
+    }
     .rightpart {
         display: flex;
         justify-content: center;
@@ -270,9 +320,11 @@ body{
         padding: 20px;
     }
 
+
     .navbar {
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     .endnavbar {
