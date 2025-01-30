@@ -1,0 +1,6 @@
+body{
+    background:linear-gradient(#13181d,#20212e,#341b47);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

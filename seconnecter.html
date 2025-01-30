@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <link rel="stylesheet" href="seconnecter.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-form">
+            <h2>Se connecter</h2>
+            <input type="email" placeholder="Adresse email" required>
+            <input type="password" placeholder="Mot de passe" required>
+            <button>Connexion</button>
+            <p>Pas encore inscrit ? <a href="#" onclick="toggleForm()">S'inscrire</a></p>
+        </div>
+        <div id="signup-form" class="hidden">
+            <h2>Inscription</h2>
+            <input type="text" placeholder="Nom complet" required>
+            <input type="email" placeholder="Adresse email" required>
+            <input type="password" placeholder="Mot de passe" required>
+            <button>Inscription</button>
+            <p>Déjà un compte ? <a href="#" onclick="toggleForm()">Se connecter</a></p>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            document.getElementById('login-form').classList.toggle('hidden');
+            document.getElementById('signup-form').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

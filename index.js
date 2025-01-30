@@ -1,1 +1,3 @@
-console.log("test")
+function seconnecter(){
+    console.log("test");
+}

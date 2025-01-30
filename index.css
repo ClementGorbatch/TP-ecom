@@ -88,6 +88,7 @@ body{
 .rightpart{
     display: flex;
     margin-right: 5%;
+    
 }
 .image {
     width: 120px;
@@ -195,6 +196,10 @@ body{
 
 /* Responsive pour Tablettes (max 1024px) */
 @media screen and (max-width: 1024px) {
+    .allimages {
+        display: flex;
+        justify-content: center;
+    }
     .header {
         height: auto;
         padding-bottom: 50px;
@@ -208,6 +213,7 @@ body{
 
     .endnavbar {
         flex-direction: column;
+        padding-left: 0px;
         margin: 0;
         gap: 10px;
     }
@@ -217,10 +223,15 @@ body{
         align-items: center;
         text-align: center;
     }
-
+    .rightpart{
+        align-items: center;
+        justify-content: center;
+        margin-right: 0%;
+    }
     .rightpart img {
         width: 80%;
         height: auto;
+        align-items: center;
     }
 
     .lebody {
@@ -232,12 +243,28 @@ body{
     .footer {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        padding: 20px;
+        align-items: center; 
     }
+    .contact{
+        align-items: center;
+    }
+    
 }
 
-/* Responsive pour Mobiles (max 768px) */
+
 @media screen and (max-width: 768px) {
+    
+    .rightpart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .rightpart img {
+        width: 40%;
+        height: auto;
+    }
     .header {
         height: auto;
         padding: 20px;
@@ -254,11 +281,13 @@ body{
         text-align: center;
     }
 
-    .headerbody {
+    .headerbody,
+    .lebody {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
 
     .titrebody {
         font-size: 30px;
@@ -274,14 +303,19 @@ body{
         height: auto;
     }
 
-    .allimages {
-        flex-wrap: wrap;
-        justify-content: center;
+    .allimages img {
+        max-width: 100%;  
+        height: auto;    
+        display: block;   
     }
 
     .footer {
         flex-direction: column;
         text-align: center;
         padding: 20px;
+        align-items: center; 
+    }
+    .contact{
+        align-items: center;
     }
 }
