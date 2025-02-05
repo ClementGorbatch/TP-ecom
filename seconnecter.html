@@ -8,28 +8,29 @@
 </head>
 <body>
     <div class="container">
-        <div id="login-form">
-            <h2>Se connecter</h2>
-            <input type="email" placeholder="Adresse email" required>
-            <input type="password" placeholder="Mot de passe" required>
-            <button>Connexion</button>
-            <p>Pas encore inscrit ? <a href="#" onclick="toggleForm()">S'inscrire</a></p>
+        <div class="header">
+            <h2 class="connection border color" onclick="seconnecter()">Se connecter</h2>
+            <h2 class="inscription"  onclick="sinscrire()">Inscription</h2>
         </div>
-        <div id="signup-form" class="hidden">
-            <h2>Inscription</h2>
-            <input type="text" placeholder="Nom complet" required>
-            <input type="email" placeholder="Adresse email" required>
-            <input type="password" placeholder="Mot de passe" required>
-            <button>Inscription</button>
-            <p>Déjà un compte ? <a href="#" onclick="toggleForm()">Se connecter</a></p>
+        <div>
+            <a id="texterreur"></a>
+        </div>
+        <div class="login-form">
+            <input id="loginemail" type="email" placeholder="Adresse email" required>
+            <input id="loginmdp" type="password" placeholder="Mot de passe" required>
+        </div>
+        <div class="signup-form hidden">
+            <input id="signupemail" type="email" placeholder="Adresse email" required>
+            <input id="signupmdp" type="password" placeholder="Mot de passe" required>
+            <input id="signupmdp2" type="password" placeholder="Confirmer le mot de passe" required>
+        </div>
+        <div class="boutonconnect">
+            <button id="boutonconnect" onclick="connection()">Se Connecter</button>
         </div>
     </div>
 
-    <script>
-        function toggleForm() {
-            document.getElementById('login-form').classList.toggle('hidden');
-            document.getElementById('signup-form').classList.toggle('hidden');
-        }
-    </script>
+    
+    <script src="seconnecter.js"></script>
 </body>
+
 </html>

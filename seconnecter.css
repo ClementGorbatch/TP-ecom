@@ -2,5 +2,68 @@ body{
     background:linear-gradient(#13181d,#20212e,#341b47);
     justify-content: center;
     align-items: center;
+    display: flex;
     height: 100vh;
+    color:white
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.signup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header{
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+button{
+    border: none; 
+    padding: 15px 20px; 
+    font-size: 15px;
+    border: 1px,solid;
+    color:white;
+    border-color :#d33bfd;
+    background-color: #d33bfd;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input{
+    height: 40px;
+    width: 100%;
+}
+
+
+.border{
+    border-bottom: 2px solid #d33bfd;
+}
+
+.color{
+    color: #d33bfd;
 }
