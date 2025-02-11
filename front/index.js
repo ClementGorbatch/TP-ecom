@@ -6,12 +6,6 @@
 }
 */
 
-function seconnecter() {
-    window.location.href = "seconnecter.html";
-}
-
-
-
 function toggleMenu() {
     const navbar = document.querySelector('.endnavbar');
     navbar.classList.toggle('active');
