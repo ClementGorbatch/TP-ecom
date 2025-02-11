@@ -7,7 +7,7 @@
 */
 
 function seconnecter() {
-    window.location.href = "seconnecter.js";
+    window.location.href = "seconnecter.html";
 }
 
 
