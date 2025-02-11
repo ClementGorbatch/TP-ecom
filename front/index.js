@@ -6,9 +6,11 @@
 }
 */
 
-function seconnecter(){
-    console.log("test");
+function seconnecter() {
+    window.location.href = "seconnecter.js";
 }
+
+
 
 function toggleMenu() {
     const navbar = document.querySelector('.endnavbar');
